@@ -112,7 +112,7 @@ mindmap
       Part II: Data Types
       Part III: Estimation
       Part IV: Analytics & ML
-      Part V: Transformation
+      Part V: Threats & Strategy
     3_DDC_Insights
       n8n Workflows
         Daily Reports
@@ -124,6 +124,16 @@ mindmap
         Excel
       Quality Assurance
       Security
+    5_DDC_Innovative
+      AI/ML Skills
+        Defect Detection
+        Risk Assessment
+      IoT & Sensors
+        Material Tracking
+        Site Monitoring
+      Advanced BIM
+        Digital Twin
+        Clash Detection
 ```
 
 ---
@@ -258,24 +268,29 @@ flowchart LR
 ```
 DDC_Skills/
 │
-├── 1_DDC_Toolkit/              ← Production tools
+├── 1_DDC_Toolkit/              ← Production tools (85 skills)
 │   ├── CWICR-Database/         ← 55,719 work items database
 │   ├── CAD-Converters/         ← Revit/IFC/DWG → Excel
 │   └── ...
 │
-├── 2_DDC_Book/                 ← 50 skills from the book
+├── 2_DDC_Book/                 ← Skills from the book (50 skills)
 │   ├── Chapter-1.1/            ← Data evolution
 │   ├── Chapter-1.2/            ← Data silos
 │   ├── Chapter-2.1/            ← Data types
 │   ├── Chapter-4.2/            ← ETL pipelines
 │   └── ...
 │
-├── 3_DDC_Insights/             ← Practical workflows
+├── 3_DDC_Insights/             ← Practical workflows (5 skills)
 │   └── Automation-Workflows/   ← n8n automation
 │
-├── 4_DDC_Curated/              ← External skills
+├── 4_DDC_Curated/              ← External skills (5 skills)
 │   ├── Document-Generation/    ← PDF/Excel generation
 │   └── Quality-Assurance/      ← Quality checks
+│
+├── 5_DDC_Innovative/           ← Advanced AI/ML skills (22 skills)
+│   ├── defect-detection-ai/    ← Computer vision for defects
+│   ├── digital-twin-sync/      ← Real-time BIM sync
+│   └── ...
 │
 ├── GETTING_STARTED.md          ← START HERE
 └── README.md                   ← You are here
