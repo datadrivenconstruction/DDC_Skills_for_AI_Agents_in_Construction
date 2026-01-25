@@ -1,24 +1,31 @@
 # Data-Driven Construction Book
 
-**Free Download - 9 Languages**
+**Free Download - Multiple Languages**
 
 > The methodology behind all DDC Skills. Downloaded by **10,000+ professionals** worldwide in 2025.
 
 ---
 
-## Download Links
+## PDF Books (Included in Repository)
+
+| Language | Title | File |
+|----------|-------|------|
+| 🇬🇧 English | Data-Driven Construction: Navigating the Data Age | [DataDrivenConstruction-EN.pdf](DataDrivenConstruction-EN.pdf) |
+| 🇩🇪 German | Navigieren im Datenzeitalter in der Bauindustrie | [DataDrivenConstruction-DE.pdf](DataDrivenConstruction-DE.pdf) |
+| 🇫🇷 French | Naviguer à travers l'ère des données | [DataDrivenConstruction-FR.pdf](DataDrivenConstruction-FR.pdf) |
+| 🇪🇸 Spanish | Navegando la era de los datos en la construcción | [DataDrivenConstruction-ES.pdf](DataDrivenConstruction-ES.pdf) |
+| 🇵🇹 Portuguese | Navegando na era dos dados na construção | [DataDrivenConstruction-PT.pdf](DataDrivenConstruction-PT.pdf) |
+| 🇮🇩 Indonesian | Menavigasi era data di industri konstruksi | [DataDrivenConstruction-ID.pdf](DataDrivenConstruction-ID.pdf) |
+
+## Additional Languages (Download from Website)
 
 | Language | Title | Download |
 |----------|-------|----------|
-| English | Data-Driven Construction: Navigating the Data Age | [Download PDF](https://datadrivenconstruction.io/product/data-driven-construction/) |
-| German | Navigieren im Datenzeitalter in der Bauindustrie | [Download PDF](https://datadrivenconstruction.io/product/data-driven-construction-3/) |
-| French | Naviguer à travers l'ère des données | [Download PDF](https://datadrivenconstruction.io/product/data-driven-construction-4/) |
-| Spanish | Navegando la era de los datos en la construcción | [Download PDF](https://datadrivenconstruction.io/books/) |
-| Ukrainian | Навігація в епоху даних у будівництві | [Download PDF](https://datadrivenconstruction.io/books/) |
-| Russian | Навигация в эпоху данных в строительстве | [Download PDF](https://datadrivenconstruction.io/books/) |
-| Polish | Nawigacja w erze danych w budownictwie | [Download PDF](https://datadrivenconstruction.io/books/) |
-| Czech | Navigace v éře dat ve stavebnictví | [Download PDF](https://datadrivenconstruction.io/books/) |
-| Portuguese | Navegando na era dos dados na construção | [Download PDF](https://datadrivenconstruction.io/books/) |
+| 🇺🇦 Ukrainian | Навігація в епоху даних у будівництві | [Website](https://datadrivenconstruction.io/books/) |
+| 🇷🇺 Russian | Навигация в эпоху данных в строительстве | [Website](https://datadrivenconstruction.io/books/) |
+| 🇵🇱 Polish | Nawigacja w erze danych w budownictwie | [Website](https://datadrivenconstruction.io/books/) |
+| 🇨🇿 Czech | Navigace v éře dat ve stavebnictví | [Website](https://datadrivenconstruction.io/books/) |
+| 🇹🇷 Turkish | İnşaat sektöründe veri çağında yolculuk | [Website](https://datadrivenconstruction.io/books/) |
 
 **All languages:** [datadrivenconstruction.io/books](https://datadrivenconstruction.io/books/)
 
