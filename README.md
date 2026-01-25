@@ -11,7 +11,7 @@
 
 ## What is this?
 
-A collection of **172 ready-to-use skills** for automating construction company processes with AI.
+A collection of **196 ready-to-use skills** for automating construction company processes with AI.
 
 ---
 
@@ -21,7 +21,7 @@ Skills are organized by source and complexity level:
 
 ```mermaid
 mindmap
-  root((DDC Skills<br/>172 skills))
+  root((DDC Skills<br/>196 skills))
     1_DDC_Toolkit
       CWICR Database
         55,719 work items
@@ -62,9 +62,9 @@ mindmap
 | Category | Description | Skills |
 |----------|-------------|--------|
 | **1_DDC_Toolkit** | Production-ready tools: CWICR database, CAD converters | 85 |
-| **2_DDC_Book** | Skills from each book chapter - your learning path | 50 |
+| **2_DDC_Book** | Skills from each book chapter - your learning path | 67 |
 | **3_DDC_Insights** | Community workflows: n8n automation, AI agents, field tools | 10 |
-| **4_DDC_Curated** | External integrations: document generation, quality checks | 5 |
+| **4_DDC_Curated** | External integrations: document generation, quality checks | 12 |
 | **5_DDC_Innovative** | Advanced: computer vision, IoT, digital twins | 22 |
 
 ---
@@ -197,18 +197,18 @@ flowchart TB
 
 ## Top 10 Skills to Start
 
-| # | Skill | What it does | Time savings |
-|---|-------|--------------|--------------|
-| 1 | `semantic-search-cwicr` | Search 55,719 work items database | 99% (15 min → 10 sec) |
-| 2 | `etl-pipeline` | Automated Excel/PDF processing | 80% |
-| 3 | `estimate-builder` | Build estimates from data | 87% |
-| 4 | `n8n-daily-report` | Automated daily reports | 92% |
-| 5 | `data-silo-detection` | Find isolated data sources | - |
-| 6 | `ifc-to-excel` | Extract quantities from BIM | 90% |
-| 7 | `n8n-photo-report` | AI-powered site photo analysis | 83% |
-| 8 | `cost-prediction` | ML cost forecasting | - |
-| 9 | `schedule-delay-analyzer` | Schedule variance analysis | 87% |
-| 10 | `kpi-dashboard` | Project KPI dashboard | 75% |
+| # | Skill | What it does |
+|---|-------|--------------|
+| 1 | `semantic-search-cwicr` | Search 55,719 work items database |
+| 2 | `etl-pipeline` | Automated Excel/PDF processing |
+| 3 | `estimate-builder` | Build estimates from data |
+| 4 | `n8n-daily-report` | Automated daily reports |
+| 5 | `data-silo-detection` | Find isolated data sources |
+| 6 | `ifc-to-excel` | Extract quantities from BIM |
+| 7 | `n8n-photo-report` | AI-powered site photo analysis |
+| 8 | `cost-prediction` | ML cost forecasting |
+| 9 | `schedule-delay-analyzer` | Schedule variance analysis |
+| 10 | `kpi-dashboard` | Project KPI dashboard |
 
 ---
 
@@ -322,34 +322,29 @@ DDC_Skills/
 
 ---
 
-## ROI of Automation
+## Potential Time Savings
 
-Real-world time savings from construction companies using DDC automation tools. Rate lookup shows the highest efficiency gain — from 15 minutes of manual searching to 10 seconds with semantic search.
+Automation results vary depending on company size, data quality, and implementation effort. These are typical improvements reported after initial setup and team training.
 
 ```mermaid
-pie title Time Savings by Process
-    "Estimates (87%)" : 87
-    "Daily Reports (92%)" : 92
-    "Budget Tracking (87%)" : 87
-    "Rate Lookup (99%)" : 99
+pie title Typical Time Reduction
+    "Data Entry & Search (50-70%)" : 60
+    "Report Generation (40-60%)" : 50
+    "Document Processing (30-50%)" : 40
+    "Analysis & Review (20-40%)" : 30
 ```
 
 ### Example Use Cases
 
-| Process | Before | After |
-|---------|--------|-------|
-| Create estimate | 2 days manual work | 2 hours with ETL |
-| Daily report | 2 hours collecting data | 10 min auto-generated |
-| Find work item rate | 15 min searching manuals | 10 sec semantic search |
-| Budget variance check | Weekly manual review | Real-time alerts |
-| IFC quantity takeoff | Manual measurement | Automatic extraction |
-| Subcontractor comparison | Spreadsheet analysis | AI-powered matching |
-| Site photo documentation | Manual sorting & tagging | CV auto-classification |
-| Schedule delay detection | Monthly review meetings | Predictive alerts |
-| Document classification | Manual filing | NLP auto-categorization |
-| Cost forecasting | Expert intuition | ML prediction models |
+| Process | Manual Approach | With Automation |
+|---------|-----------------|-----------------|
+| Find work item rate | Search through price books | Database query with filters |
+| Daily report compilation | Collect data from multiple sources | Pre-configured data aggregation |
+| IFC quantity extraction | Open model, measure manually | Script-based extraction to Excel |
+| Budget variance tracking | Weekly spreadsheet updates | Scheduled comparison reports |
+| Document organization | Manual folder sorting | Metadata-based classification |
 
-*These are just a few examples. See [GETTING_STARTED.md](GETTING_STARTED.md) for complete automation scenarios.*
+*Results depend on data preparation and workflow complexity. See [GETTING_STARTED.md](GETTING_STARTED.md) for implementation guidance.*
 
 ---
 
