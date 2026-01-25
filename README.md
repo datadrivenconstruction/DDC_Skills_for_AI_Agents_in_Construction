@@ -330,11 +330,45 @@ pie title Time Savings by Process
 
 ---
 
+## About the Book
+
+<table>
+<tr>
+<td width="120">
+
+![DDC Book](https://datadrivenconstruction.io/wp-content/uploads/2024/01/cover-en-200.png)
+
+</td>
+<td>
+
+**"Data-Driven Construction"** by Artem Boiko
+
+The methodology behind this skills collection. In 2025, the book was downloaded by **10,000+ professionals** from construction companies worldwide.
+
+**What's inside:**
+- Data types in construction (structured, semi-structured, unstructured)
+- How to detect and eliminate data silos
+- ETL pipelines for construction automation
+- Machine learning for cost and schedule prediction
+- Digital transformation strategy
+
+**Available in 9 languages:** English, German, Spanish, French, Ukrainian, Russian, Polish, Czech, Portuguese
+
+**ISBN:** 978-3-9826255-9-1
+
+[**Download Free (All Languages)**](https://datadrivenconstruction.io/books/)
+
+</td>
+</tr>
+</table>
+
+---
+
 ## Resources
 
 | Resource | Link |
 |----------|------|
-| Book | "Data-Driven Construction" by Artem Boiko (ISBN 978-3-9826255-9-1) |
+| Book (All Languages) | https://datadrivenconstruction.io/books/ |
 | Website | https://datadrivenconstruction.io |
 | CWICR Demo | https://openconstructionestimate.com |
 | GitHub | https://github.com/datadrivenconstruction |
