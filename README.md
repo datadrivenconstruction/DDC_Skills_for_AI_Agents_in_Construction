@@ -298,7 +298,7 @@ DDC_Skills/
 │   ├── digital-twin-sync/      ← Real-time BIM sync
 │   └── ...
 │
-├── Books/                      ← Free book downloads (9 languages)
+├── Books/                      ← Free book downloads (31 languages)
 ├── GETTING_STARTED.md          ← START HERE
 └── README.md                   ← You are here
 ```
@@ -338,16 +338,16 @@ pie title Time Savings by Process
 
 <table>
 <tr>
-<td width="120">
+<td width="200">
 
-![DDC Book](https://datadrivenconstruction.io/wp-content/uploads/2024/01/cover-en-200.png)
+<img src="https://datadrivenconstruction.io/wp-content/uploads/2024/03/DDC-Book-5.jpg" alt="Data-Driven Construction Book Cover" width="180">
 
 </td>
 <td>
 
-**"Data-Driven Construction"** by Artem Boiko
+**"Data-Driven Construction: Navigating the Data Age"** by Artem Boiko
 
-The methodology behind this skills collection. In 2025, the book was downloaded by **10,000+ professionals** from construction companies worldwide.
+The methodology behind this skills collection. **2nd Edition 2025** - downloaded by **10,000+ professionals** from construction companies worldwide.
 
 **What's inside:**
 - Data types in construction (structured, semi-structured, unstructured)
@@ -356,11 +356,11 @@ The methodology behind this skills collection. In 2025, the book was downloaded 
 - Machine learning for cost and schedule prediction
 - Digital transformation strategy
 
-**Available in 9 languages:** English, German, Spanish, French, Ukrainian, Russian, Polish, Czech, Portuguese
+**Available in 31 languages** - [See all translations](Books/)
 
 **ISBN:** 978-3-9826255-9-1
 
-[**Download Free (All Languages)**](https://datadrivenconstruction.io/books/)
+[**Download Free PDF (All Languages)**](Books/)
 
 </td>
 </tr>
