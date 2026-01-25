@@ -116,6 +116,18 @@ Whether you're automating cost estimation, building ETL pipelines, or implementi
 
 ---
 
+## Support the Project
+
+If you find these resources useful, please give the repository a star! It helps others discover the book and DDC tools.
+
+<p align="center">
+  <a href="https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction">
+    <img src="https://img.shields.io/github/stars/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction?style=social" alt="GitHub stars">
+  </a>
+</p>
+
+---
+
 ## License
 
 The book is provided free for educational and professional use. Please respect the author's copyright when sharing.

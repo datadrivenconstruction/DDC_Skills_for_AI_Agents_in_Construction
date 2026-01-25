@@ -381,6 +381,25 @@ The methodology behind this skills collection. In 2025, the book was downloaded 
 
 ---
 
+## Support the Project
+
+If you find these tools useful, please give the repository a star! It helps others discover these resources and motivates us to add more skills and updates for the construction industry.
+
+<p align="center">
+  <a href="https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction">
+    <img src="https://img.shields.io/github/stars/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction?style=social" alt="GitHub stars">
+  </a>
+</p>
+
+**Also star our other repositories:**
+
+| Repository | Description |
+|------------|-------------|
+| [OpenConstructionEstimate-DDC-CWICR](https://github.com/datadrivenconstruction/OpenConstructionEstimate-DDC-CWICR) | 55,719 work items database in 9 languages |
+| [cad2data Pipeline](https://github.com/datadrivenconstruction/cad2data-Revit-IFC-DWG-DGN-pipeline-with-conversion-validation-qto) | Revit/IFC/DWG/DGN to Excel converter |
+
+---
+
 ## License
 
 - **CWICR Database**: CC BY 4.0
