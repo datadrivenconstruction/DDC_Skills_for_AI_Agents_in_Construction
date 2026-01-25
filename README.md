@@ -13,32 +13,61 @@
 
 A collection of **172 ready-to-use skills** for automating construction company processes with AI.
 
-**The majority of skills are based on the book ["Data-Driven Construction"](Books/)** — a comprehensive methodology for digital transformation in construction. The book serves as a strategic roadmap: from understanding your current data landscape to implementing advanced AI/ML solutions. Each chapter translates directly into practical skills you can deploy immediately.
+---
 
-<table>
-<tr>
-<td width="180">
+## Collection Structure
 
-<a href="Books/">
-<img src="https://datadrivenconstruction.io/wp-content/uploads/2024/03/DDC-Book-5.jpg" alt="Data-Driven Construction Book" width="160">
-</a>
+Skills are organized by source and complexity level:
 
-</td>
-<td>
+```mermaid
+mindmap
+  root((DDC Skills<br/>172 skills))
+    1_DDC_Toolkit
+      CWICR Database
+        55,719 work items
+        31 languages
+      CAD Converters
+        Revit → Excel
+        IFC → Excel
+        DWG → Excel
+      Analytics
+        KPI Dashboard
+        Cost Analysis
+    2_DDC_Book
+      Part I: Data Evolution
+      Part II: Data Types
+      Part III: Estimation
+      Part IV: Analytics & ML
+      Part V: Threats & Strategy
+    3_DDC_Insights
+      n8n Workflows
+        Daily Reports
+        Photo Reports
+      AI Agents 2026
+      Field Automation
+    4_DDC_Curated
+      Document Generation
+        PDF
+        Excel
+      Quality Assurance
+    5_DDC_Innovative
+      AI/ML Skills
+        Defect Detection
+        Risk Assessment
+      IoT & Sensors
+      Advanced BIM
+        Digital Twin
+```
 
-**Use the book as your digital transformation guide:**
+| Category | Description | Skills |
+|----------|-------------|--------|
+| **1_DDC_Toolkit** | Production-ready tools: CWICR database, CAD converters | 85 |
+| **2_DDC_Book** | Skills from each book chapter - your learning path | 50 |
+| **3_DDC_Insights** | Community workflows: n8n automation, AI agents, field tools | 10 |
+| **4_DDC_Curated** | External integrations: document generation, quality checks | 5 |
+| **5_DDC_Innovative** | Advanced: computer vision, IoT, digital twins | 22 |
 
-1. **Assess** your current state with Part I (data silos, maturity level)
-2. **Understand** your data types with Part II (structured, semi-structured, unstructured)
-3. **Automate** calculations with Part III (estimation, QTO, scheduling)
-4. **Scale** with analytics and ML from Part IV (dashboards, predictions)
-5. **Strategize** long-term with Chapter 5 (threats, opportunities)
-
-**[Download Free in 31 Languages →](Books/)**
-
-</td>
-</tr>
-</table>
+---
 
 ```mermaid
 flowchart LR
@@ -83,60 +112,6 @@ flowchart LR
 | **Estimator** | Automated estimate creation | `estimate-builder`, `semantic-search-cwicr` |
 | **PM / Superintendent** | Automatic reports | `n8n-daily-report`, `n8n-photo-report` |
 | **IT / Developer** | Ready Python scripts and APIs | Any skill from `2_DDC_Book/` |
-
----
-
-## Collection Structure
-
-Skills are organized by source and complexity level:
-
-```mermaid
-mindmap
-  root((DDC Skills<br/>172 skills))
-    1_DDC_Toolkit
-      CWICR Database
-        55,719 work items
-        9 languages
-      CAD Converters
-        Revit → Excel
-        IFC → Excel
-        DWG → Excel
-      Analytics
-        KPI Dashboard
-        Cost Analysis
-    2_DDC_Book
-      Part I: Data Evolution
-      Part II: Data Types
-      Part III: Estimation
-      Part IV: Analytics & ML
-      Part V: Threats & Strategy
-    3_DDC_Insights
-      n8n Workflows
-        Daily Reports
-        Photo Reports
-      AI Agents 2026
-      Field Automation
-    4_DDC_Curated
-      Document Generation
-        PDF
-        Excel
-      Quality Assurance
-    5_DDC_Innovative
-      AI/ML Skills
-        Defect Detection
-        Risk Assessment
-      IoT & Sensors
-      Advanced BIM
-        Digital Twin
-```
-
-| Category | Description | Skills |
-|----------|-------------|--------|
-| **1_DDC_Toolkit** | Production-ready tools: CWICR database, CAD converters | 85 |
-| **2_DDC_Book** | Skills from each book chapter - your learning path | 50 |
-| **3_DDC_Insights** | Community workflows: n8n automation, AI agents, field tools | 10 |
-| **4_DDC_Curated** | External integrations: document generation, quality checks | 5 |
-| **5_DDC_Innovative** | Advanced: computer vision, IoT, digital twins | 22 |
 
 ---
 
@@ -368,6 +343,37 @@ pie title Time Savings by Process
 
 ---
 
+## About the Book
+
+**The majority of skills are based on the book ["Data-Driven Construction"](Books/)** — a comprehensive methodology for digital transformation in construction. The book serves as a strategic roadmap: from understanding your current data landscape to implementing advanced AI/ML solutions.
+
+<table>
+<tr>
+<td width="180">
+
+<a href="Books/">
+<img src="https://datadrivenconstruction.io/wp-content/uploads/2024/03/DDC-Book-5.jpg" alt="Data-Driven Construction Book" width="160">
+</a>
+
+</td>
+<td>
+
+**Use the book as your digital transformation guide:**
+
+1. **Assess** your current state with Part I (data silos, maturity level)
+2. **Understand** your data types with Part II (structured, semi-structured, unstructured)
+3. **Automate** calculations with Part III (estimation, QTO, scheduling)
+4. **Scale** with analytics and ML from Part IV (dashboards, predictions)
+5. **Strategize** long-term with Chapter 5 (threats, opportunities)
+
+**[Download Free in 31 Languages →](Books/)**
+
+</td>
+</tr>
+</table>
+
+---
+
 ## Resources
 
 | Resource | Link |
@@ -395,7 +401,7 @@ If you find these tools useful, please give the repository a star! It helps othe
 
 | Repository | Description |
 |------------|-------------|
-| [OpenConstructionEstimate-DDC-CWICR](https://github.com/datadrivenconstruction/OpenConstructionEstimate-DDC-CWICR) | 55,719 work items database in 9 languages |
+| [OpenConstructionEstimate-DDC-CWICR](https://github.com/datadrivenconstruction/OpenConstructionEstimate-DDC-CWICR) | 55,719 work items database in 31 languages |
 | [cad2data Pipeline](https://github.com/datadrivenconstruction/cad2data-Revit-IFC-DWG-DGN-pipeline-with-conversion-validation-qto) | Revit/IFC/DWG/DGN to Excel converter |
 
 ---
