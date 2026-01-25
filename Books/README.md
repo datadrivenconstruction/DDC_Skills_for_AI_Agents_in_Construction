@@ -3,7 +3,7 @@
 **2nd Edition 2025 - Free Download in 31 Languages**
 
 <p align="center">
-  <img src="https://datadrivenconstruction.io/wp-content/uploads/2024/03/DDC-Book-5.jpg" alt="Data-Driven Construction Book Cover" width="300">
+  <img src="https://datadrivenconstruction.io/wp-content/uploads/2024/03/DDC-Book-5.jpg" alt="Data-Driven Construction Book Cover" width="500">
 </p>
 
 > *"Navigating the Data Age in the Construction Industry"*
