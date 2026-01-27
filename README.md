@@ -3,7 +3,48 @@
 **AI Tools for Construction Company Automation**
 
 ### Works with any AI coding assistant:
-`Claude Code` · `Cursor` · `GitHub Copilot` · `Gemini Code Assist` · `Cody` · `Continue` · `OpenCode` · `Aider`
+
+<table>
+<tr>
+<td align="center" width="100">
+<a href="https://claude.ai/download"><img src="https://img.shields.io/badge/Claude_Code-191919?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Code"></a>
+</td>
+<td align="center" width="100">
+<a href="https://cursor.com"><img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white" alt="Cursor"></a>
+</td>
+<td align="center" width="100">
+<a href="https://github.com/features/copilot"><img src="https://img.shields.io/badge/GitHub_Copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white" alt="GitHub Copilot"></a>
+</td>
+<td align="center" width="100">
+<a href="https://codeium.com/windsurf"><img src="https://img.shields.io/badge/Windsurf-5B5EA6?style=for-the-badge&logo=codeium&logoColor=white" alt="Windsurf"></a>
+</td>
+</tr>
+<tr>
+<td align="center" width="100">
+<a href="https://cloud.google.com/gemini/docs/codeassist/overview"><img src="https://img.shields.io/badge/Gemini_Code_Assist-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Gemini Code Assist"></a>
+</td>
+<td align="center" width="100">
+<a href="https://sourcegraph.com/cody"><img src="https://img.shields.io/badge/Cody-FF5543?style=for-the-badge&logo=sourcegraph&logoColor=white" alt="Cody"></a>
+</td>
+<td align="center" width="100">
+<a href="https://continue.dev"><img src="https://img.shields.io/badge/Continue-1389FD?style=for-the-badge&logo=continue&logoColor=white" alt="Continue"></a>
+</td>
+<td align="center" width="100">
+<a href="https://aider.chat"><img src="https://img.shields.io/badge/Aider-14B8A6?style=for-the-badge&logo=aider&logoColor=white" alt="Aider"></a>
+</td>
+</tr>
+<tr>
+<td align="center" width="100">
+<a href="https://github.com/anthropics/antigranular"><img src="https://img.shields.io/badge/Antigravity-6C3483?style=for-the-badge&logoColor=white" alt="Antigravity"></a>
+</td>
+<td align="center" width="100">
+<a href="https://github.com/nicepkg/opencode"><img src="https://img.shields.io/badge/OpenCode-333333?style=for-the-badge&logo=github&logoColor=white" alt="OpenCode"></a>
+</td>
+<td align="center" colspan="2">
+<em>...and any assistant that supports SKILL.md files</em>
+</td>
+</tr>
+</table>
 
 ---
 
@@ -383,20 +424,6 @@ Automation results vary depending on company size, data quality, and implementat
 | Document organization | Manual folder sorting | Metadata-based classification |
 
 *Results depend on data preparation and workflow complexity. See [GETTING_STARTED.md](GETTING_STARTED.md) for implementation guidance.*
-
----
-
-## Limitations
-
-This collection provides templates and starting points, not turnkey solutions:
-
-- **Data preparation required** — skills assume reasonably clean input data
-- **Customization needed** — code examples require adaptation to your specific workflows
-- **No GUI** — most skills are command-line scripts, not desktop applications
-- **AI-dependent** — skills are designed to work with AI coding assistants, not standalone
-- **English-centric** — code comments and documentation are primarily in English
-
-For production deployment, expect to invest time in testing, error handling, and integration with your existing systems.
 
 ---
 
