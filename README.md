@@ -17,45 +17,6 @@ A skill is a `SKILL.md` file — structured instructions that an AI coding assis
 
 ---
 
-## Where to Start
-
-### If you manage or lead a construction company:
-
-**Step 1.** Read [GETTING_STARTED.md](GETTING_STARTED.md) — a non-technical overview of what can be automated and how to prioritize.
-
-**Step 2.** Download the [Data-Driven Construction](Books/) book (free, 31 languages) — it explains the methodology behind these skills: how to assess your company's data maturity, identify bottlenecks, and plan digital transformation.
-
-**Step 3.** Identify your biggest pain point in the table below and start with the corresponding skill.
-
-### If you are a developer or IT lead:
-
-**Step 1.** Install prerequisites (see [Prerequisites](#prerequisites)).
-
-**Step 2.** Pick a skill from the table below, open its folder in your AI assistant, and follow the `SKILL.md`.
-
-**Step 3.** Adapt the generated code to your data and deploy.
-
----
-
-## What Can You Automate?
-
-Pick your problem — get the skill to solve it:
-
-| Your problem | What the skill does | Skill to run | Folder |
-|--------------|---------------------|--------------|--------|
-| Searching for work item rates takes too long | Semantic search across 55,719 items in 31 languages | `semantic-search-cwicr` | `1_DDC_Toolkit/` |
-| Estimators spend days building estimates manually | Generates estimates from historical data and templates | `estimate-builder` | `1_DDC_Toolkit/` |
-| BIM models contain data but it's locked in Revit/IFC | Extracts quantities and properties to Excel | `ifc-to-excel`, `revit-to-excel` | `1_DDC_Toolkit/` |
-| Daily/weekly reports take hours to compile | Automated data collection and report generation | `n8n-daily-report` | `3_DDC_Insights/` |
-| Site photos pile up with no organization | AI classifies and tags site photos automatically | `n8n-photo-report` | `3_DDC_Insights/` |
-| Data is scattered across Excel files, emails, PDFs | Finds all data sources and maps dependencies | `data-silo-detection` | `2_DDC_Book/` |
-| No visibility into project KPIs | Dashboard with real-time metrics from your data | `kpi-dashboard` | `1_DDC_Toolkit/` |
-| Budget overruns discovered too late | Scheduled budget vs. actual comparison | `budget-tracker` | `1_DDC_Toolkit/` |
-| PDF specifications need to be searchable | Extracts text and tables from PDFs into structured data | `specification-extractor` | `2_DDC_Book/` |
-| Schedule delays are hard to predict | Statistical analysis of schedule variance patterns | `schedule-delay-analyzer` | `3_DDC_Insights/` |
-
----
-
 ## Collection Structure
 
 Skills are organized by source and complexity level:
@@ -110,6 +71,47 @@ mindmap
 
 ---
 
+## Where to Start
+
+### If you manage or lead a construction company:
+
+**Step 1.** Read [GETTING_STARTED.md](GETTING_STARTED.md) — a non-technical overview of what can be automated and how to prioritize.
+
+**Step 2.** Download the [Data-Driven Construction](Books/) book (free, 31 languages) — it explains the methodology behind these skills: how to assess your company's data maturity, identify bottlenecks, and plan digital transformation.
+
+**Step 3.** Identify your biggest pain point in the table below and start with the corresponding skill.
+
+### If you are a developer or IT lead:
+
+**Step 1.** Install prerequisites (see [Prerequisites](#prerequisites)).
+
+**Step 2.** Pick a skill from the table below, open its folder in your AI assistant, and follow the `SKILL.md`.
+
+**Step 3.** Adapt the generated code to your data and deploy.
+
+---
+
+## What Can You Automate?
+
+Examples of common problems and which skills address them:
+
+| Your problem | What the skill does | Skill to run | Folder |
+|--------------|---------------------|--------------|--------|
+| Searching for work item rates takes too long | Semantic search across 55,719 items in 31 languages | `semantic-search-cwicr` | `1_DDC_Toolkit/` |
+| Estimators spend days building estimates manually | Generates estimates from historical data and templates | `estimate-builder` | `1_DDC_Toolkit/` |
+| BIM models contain data but it's locked in Revit/IFC | Extracts quantities and properties to Excel | `ifc-to-excel`, `revit-to-excel` | `1_DDC_Toolkit/` |
+| Daily/weekly reports take hours to compile | Automated data collection and report generation | `n8n-daily-report` | `3_DDC_Insights/` |
+| Site photos pile up with no organization | AI classifies and tags site photos automatically | `n8n-photo-report` | `3_DDC_Insights/` |
+| Data is scattered across Excel files, emails, PDFs | Finds all data sources and maps dependencies | `data-silo-detection` | `2_DDC_Book/` |
+| No visibility into project KPIs | Dashboard with real-time metrics from your data | `kpi-dashboard` | `1_DDC_Toolkit/` |
+| Budget overruns discovered too late | Scheduled budget vs. actual comparison | `budget-tracker` | `1_DDC_Toolkit/` |
+| PDF specifications need to be searchable | Extracts text and tables from PDFs into structured data | `specification-extractor` | `2_DDC_Book/` |
+| Schedule delays are hard to predict | Statistical analysis of schedule variance patterns | `schedule-delay-analyzer` | `3_DDC_Insights/` |
+
+*This is a selection of examples. The full collection contains 221 skills covering estimation, reporting, BIM, document processing, analytics, and more.*
+
+---
+
 ## How to Use a Skill
 
 ```
@@ -159,6 +161,94 @@ A typical automation project follows these stages. You don't need to do all of t
 | **5. Analyze** | Apply analytics and ML to find patterns and predict outcomes | `cost-prediction`, `schedule-forecaster`, `risk-assessment` |
 
 Each stage builds on the previous one, but you can enter at any point depending on your current state.
+
+---
+
+## How Does It Work?
+
+Each step in the implementation path corresponds to specific skills and tools:
+
+```mermaid
+flowchart LR
+    subgraph S1["STEP 1"]
+        A[Audit<br/>Find Data Silos]
+    end
+
+    subgraph S2["STEP 2"]
+        B[Classify<br/>Data Types]
+    end
+
+    subgraph S3["STEP 3"]
+        C[Connect<br/>ETL Pipelines]
+    end
+
+    subgraph S4["STEP 4"]
+        D[Automate<br/>Reports & Dashboards]
+    end
+
+    subgraph S5["STEP 5"]
+        E[Analyze<br/>ML & Predictions]
+    end
+
+    A --> B --> C --> D --> E
+
+    A1[data-silo-detection<br/>data-source-audit] -.-> A
+    B1[data-type-classifier<br/>data-profiler] -.-> B
+    C1[etl-pipeline<br/>ifc-to-excel] -.-> C
+    D1[n8n-daily-report<br/>kpi-dashboard] -.-> D
+    E1[cost-prediction<br/>schedule-forecaster] -.-> E
+
+    style S1 fill:#ffebee
+    style S2 fill:#fff3e0
+    style S3 fill:#e8f5e9
+    style S4 fill:#e3f2fd
+    style S5 fill:#f3e5f5
+```
+
+---
+
+## Data Types in Construction
+
+Construction data comes in three forms. Each requires a different processing approach, and each has corresponding skills:
+
+```mermaid
+flowchart TB
+    subgraph STRUCTURED["STRUCTURED"]
+        S1[Excel]
+        S2[SQL Database]
+        S3[CSV]
+    end
+
+    subgraph SEMI["SEMI-STRUCTURED"]
+        M1[IFC/BIM]
+        M2[JSON]
+        M3[XML]
+    end
+
+    subgraph UNSTRUCTURED["UNSTRUCTURED"]
+        U1[PDF]
+        U2[Photos]
+        U3[Scans]
+    end
+
+    STRUCTURED -->|SQL queries, pandas| DB[(Central<br/>Database)]
+    SEMI -->|ifcopenshell, parsers| DB
+    UNSTRUCTURED -->|AI/OCR, pdfplumber| DB
+
+    DB --> AUTO[Automation & Analytics]
+
+    style STRUCTURED fill:#c8e6c9
+    style SEMI fill:#fff9c4
+    style UNSTRUCTURED fill:#ffcdd2
+    style DB fill:#e1f5fe
+    style AUTO fill:#f3e5f5
+```
+
+| Data type | Examples | Skills that process it |
+|-----------|----------|----------------------|
+| **Structured** | Excel, CSV, SQL databases | `etl-pipeline`, `estimate-builder`, `budget-tracker` |
+| **Semi-structured** | IFC/BIM models, JSON, XML | `ifc-to-excel`, `revit-to-excel`, `dwg-to-excel` |
+| **Unstructured** | PDF documents, photos, scans | `specification-extractor`, `n8n-photo-report`, `document-ocr` |
 
 ---
 
