@@ -2,8 +2,6 @@
 
 **AI Tools for Construction Company Automation**
 
-> *"ETL: transitioning from manual to automated management allows companies to process data without constant human intervention."* — Data-Driven Construction, Chapter 4.2
-
 ### Works with any AI coding assistant:
 `Claude Code` · `Cursor` · `GitHub Copilot` · `Gemini Code Assist` · `Cody` · `Continue` · `OpenCode` · `Aider`
 
@@ -15,19 +13,60 @@ A collection of **221 skills** for automating construction company processes wit
 
 ### What is a "Skill"?
 
-A skill is a `SKILL.md` file containing structured instructions that AI coding assistants can follow. Each skill includes:
-- **Context** — what problem it solves
-- **Instructions** — step-by-step implementation guide
-- **Code examples** — Python, SQL, or workflow configurations
-- **Dependencies** — required libraries and tools
+A skill is a `SKILL.md` file — structured instructions that an AI coding assistant can read and execute. Each skill describes a specific task: what problem it solves, what code to generate, and what tools are needed. You open a skill folder in your AI assistant, and it helps you implement the described functionality.
 
-When you open a skill folder in your AI assistant (Claude Code, Cursor, etc.), the assistant reads `SKILL.md` and can help you implement the described functionality.
+---
+
+## Where to Start
+
+### If you manage or lead a construction company:
+
+**Step 1.** Read [GETTING_STARTED.md](GETTING_STARTED.md) — a non-technical overview of what can be automated and how to prioritize.
+
+**Step 2.** Download the [Data-Driven Construction](Books/) book (free, 31 languages) — it explains the methodology behind these skills: how to assess your company's data maturity, identify bottlenecks, and plan digital transformation.
+
+**Step 3.** Identify your biggest pain point in the table below and start with the corresponding skill.
+
+### If you are a developer or IT lead:
+
+**Step 1.** Install prerequisites (see [Prerequisites](#prerequisites)).
+
+**Step 2.** Pick a skill from the table below, open its folder in your AI assistant, and follow the `SKILL.md`.
+
+**Step 3.** Adapt the generated code to your data and deploy.
+
+---
+
+## What Can You Automate?
+
+Pick your problem — get the skill to solve it:
+
+| Your problem | What the skill does | Skill to run | Folder |
+|--------------|---------------------|--------------|--------|
+| Searching for work item rates takes too long | Semantic search across 55,719 items in 31 languages | `semantic-search-cwicr` | `1_DDC_Toolkit/` |
+| Estimators spend days building estimates manually | Generates estimates from historical data and templates | `estimate-builder` | `1_DDC_Toolkit/` |
+| BIM models contain data but it's locked in Revit/IFC | Extracts quantities and properties to Excel | `ifc-to-excel`, `revit-to-excel` | `1_DDC_Toolkit/` |
+| Daily/weekly reports take hours to compile | Automated data collection and report generation | `n8n-daily-report` | `3_DDC_Insights/` |
+| Site photos pile up with no organization | AI classifies and tags site photos automatically | `n8n-photo-report` | `3_DDC_Insights/` |
+| Data is scattered across Excel files, emails, PDFs | Finds all data sources and maps dependencies | `data-silo-detection` | `2_DDC_Book/` |
+| No visibility into project KPIs | Dashboard with real-time metrics from your data | `kpi-dashboard` | `1_DDC_Toolkit/` |
+| Budget overruns discovered too late | Scheduled budget vs. actual comparison | `budget-tracker` | `1_DDC_Toolkit/` |
+| PDF specifications need to be searchable | Extracts text and tables from PDFs into structured data | `specification-extractor` | `2_DDC_Book/` |
+| Schedule delays are hard to predict | Statistical analysis of schedule variance patterns | `schedule-delay-analyzer` | `3_DDC_Insights/` |
 
 ---
 
 ## Collection Structure
 
 Skills are organized by source and complexity level:
+
+| Category | What's inside | Skills | Start here if... |
+|----------|---------------|--------|------------------|
+| **1_DDC_Toolkit** | Production-ready tools: CWICR database, CAD converters, analytics | 85 | You need a working tool now |
+| **2_DDC_Book** | Skills mapped to book chapters: data evolution, types, estimation, ML | 67 | You want to follow a structured learning path |
+| **3_DDC_Insights** | Practical workflows: n8n automation, AI agents, field tools | 20 | You need workflow automation |
+| **4_DDC_Curated** | Document generation (PDF, Excel, DOCX, PPTX), quality checks | 20 | You need document or report templates |
+| **5_DDC_Innovative** | Advanced: computer vision, IoT, digital twins, risk assessment | 29 | You're ready for AI/ML experimentation |
 
 ```mermaid
 mindmap
@@ -57,8 +96,8 @@ mindmap
       Field Automation
     4_DDC_Curated
       Document Generation
-        PDF
-        Excel
+        PDF, Excel
+        DOCX, PPTX
       Quality Assurance
     5_DDC_Innovative
       AI/ML Skills
@@ -69,19 +108,85 @@ mindmap
         Digital Twin
 ```
 
-| Category | Description | Skills |
-|----------|-------------|--------|
-| **1_DDC_Toolkit** | Production-ready tools: CWICR database, CAD converters | 85 |
-| **2_DDC_Book** | Skills from each book chapter - your learning path | 67 |
-| **3_DDC_Insights** | Community workflows: n8n automation, AI agents, field tools | 20 |
-| **4_DDC_Curated** | External integrations: document generation, quality checks | 20 |
-| **5_DDC_Innovative** | Advanced: computer vision, IoT, digital twins | 29 |
+---
+
+## How to Use a Skill
+
+```
+1. Clone this repository
+   git clone https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction.git
+
+2. Open a skill folder in your AI assistant
+   cd DDC_Skills_for_AI_Agents_in_Construction/1_DDC_Toolkit/CWICR-Database/semantic-search-cwicr/
+
+3. The assistant reads SKILL.md and generates the code for you
+
+4. Review, adapt to your data, and run
+```
+
+### Example: ETL Pipeline
+
+```python
+# Automatic processing of all Excel files from a folder
+
+import pandas as pd
+from pathlib import Path
+
+# Extract
+all_data = [pd.read_excel(f) for f in Path("./estimates/").glob("*.xlsx")]
+df = pd.concat(all_data)
+
+# Transform
+df['Total'] = df['Quantity'] * df['Unit_Price']
+summary = df.groupby('Category')['Total'].sum()
+
+# Load
+summary.to_excel("summary_report.xlsx")
+```
 
 ---
 
-## Data Pipeline Overview
+## Implementation Path
 
-Skills cover the typical data flow in construction: from raw input files to processed outputs.
+A typical automation project follows these stages. You don't need to do all of them — start with what solves your most pressing problem.
+
+| Stage | What you do | Which skills help |
+|-------|-------------|-------------------|
+| **1. Audit** | List all data sources in your company (Excel files, databases, BIM models, PDFs, emails) | `data-silo-detection`, `data-source-audit` |
+| **2. Classify** | Understand what data you have: structured, semi-structured, or unstructured | `data-type-classifier`, `data-profiler` |
+| **3. Connect** | Build ETL pipelines to extract and normalize data | `etl-pipeline`, `ifc-to-excel`, `specification-extractor` |
+| **4. Automate** | Set up recurring reports, alerts, and dashboards | `n8n-daily-report`, `kpi-dashboard`, `budget-tracker` |
+| **5. Analyze** | Apply analytics and ML to find patterns and predict outcomes | `cost-prediction`, `schedule-forecaster`, `risk-assessment` |
+
+Each stage builds on the previous one, but you can enter at any point depending on your current state.
+
+---
+
+## Prerequisites
+
+| Requirement | Details |
+|-------------|---------|
+| **Python 3.9+** | Most skills use Python scripts |
+| **AI Coding Assistant** | Claude Code, Cursor, Copilot, or similar |
+| **Basic Python knowledge** | Ability to run scripts and install packages |
+| **Your data** | Excel files, PDFs, or BIM models to process |
+
+Optional for advanced skills:
+- Docker (for n8n workflows)
+- PostgreSQL or SQLite (for database skills)
+- OpenAI API key (for LLM-based skills)
+
+### Installation
+
+```bash
+pip install pandas openpyxl ifcopenshell pdfplumber
+```
+
+---
+
+## Data Flow in Construction
+
+Skills cover the typical data pipeline: from raw input files to processed, actionable outputs.
 
 ```mermaid
 flowchart LR
@@ -116,196 +221,13 @@ flowchart LR
     style OUTPUT fill:#e8f5e9
 ```
 
----
+Construction data comes in three forms. Each requires a different processing approach:
 
-## Who is this for?
-
-| Role | What you get | Start with |
-|------|--------------|------------|
-| **Executive** | Understanding how to automate your company | [GETTING_STARTED.md](GETTING_STARTED.md) |
-| **Estimator** | Automated estimate creation | `estimate-builder`, `semantic-search-cwicr` |
-| **PM / Superintendent** | Automatic reports | `n8n-daily-report`, `n8n-photo-report` |
-| **IT / Developer** | Ready Python scripts and APIs | Any skill from `2_DDC_Book/` |
-
----
-
-## How does it work?
-
-Start with detecting data silos, connect your sources, build automated pipelines, then scale with AI/ML. Each step has dedicated skills to guide you through the implementation.
-
-```mermaid
-flowchart LR
-    subgraph S1["STEP 1<br/>1-2 days"]
-        A[🔍 Find<br/>Data Silos]
-    end
-
-    subgraph S2["STEP 2<br/>1 week"]
-        B[🔗 Connect<br/>Data Sources]
-    end
-
-    subgraph S3["STEP 3<br/>2-4 weeks"]
-        C[⚡ Create<br/>ETL Pipelines]
-    end
-
-    subgraph S4["STEP 4<br/>Ongoing"]
-        D[📈 Scale<br/>Add AI/ML]
-    end
-
-    A --> B --> C --> D
-
-    A1[data-silo-detection] -.-> A
-    B1[etl-pipeline<br/>data-type-classifier] -.-> B
-    C1[n8n-daily-report<br/>n8n-photo-report] -.-> C
-    D1[cost-prediction<br/>ML models] -.-> D
-
-    style S1 fill:#ffebee
-    style S2 fill:#fff3e0
-    style S3 fill:#e8f5e9
-    style S4 fill:#e3f2fd
-```
-
----
-
-## Data Types in Construction
-
-Construction data comes in three forms: structured (Excel, SQL, CSV), semi-structured (IFC/BIM, JSON, XML), and unstructured (PDF, photos, scans). All data flows into a central database through SQL queries, parsing, or AI/OCR — enabling unified automation.
-
-```mermaid
-flowchart TB
-    subgraph STRUCTURED["📊 STRUCTURED"]
-        S1[Excel]
-        S2[SQL Database]
-        S3[CSV]
-    end
-
-    subgraph SEMI["📋 SEMI-STRUCTURED"]
-        M1[IFC/BIM]
-        M2[JSON]
-        M3[XML]
-    end
-
-    subgraph UNSTRUCTURED["📄 UNSTRUCTURED"]
-        U1[PDF]
-        U2[Photos]
-        U3[Scans]
-    end
-
-    STRUCTURED -->|SQL queries| DB[(Central<br/>Database)]
-    SEMI -->|Parsing| DB
-    UNSTRUCTURED -->|AI/OCR| DB
-
-    DB --> AUTO[🤖 Automation]
-
-    style STRUCTURED fill:#c8e6c9
-    style SEMI fill:#fff9c4
-    style UNSTRUCTURED fill:#ffcdd2
-    style DB fill:#e1f5fe
-    style AUTO fill:#f3e5f5
-```
-
----
-
-## Top 10 Skills to Start
-
-| # | Skill | What it does |
-|---|-------|--------------|
-| 1 | `semantic-search-cwicr` | Search 55,719 work items database |
-| 2 | `etl-pipeline` | Automated Excel/PDF processing |
-| 3 | `estimate-builder` | Build estimates from data |
-| 4 | `n8n-daily-report` | Automated daily reports |
-| 5 | `data-silo-detection` | Find isolated data sources |
-| 6 | `ifc-to-excel` | Extract quantities from BIM |
-| 7 | `n8n-photo-report` | AI-powered site photo analysis |
-| 8 | `cost-prediction` | ML cost forecasting |
-| 9 | `schedule-delay-analyzer` | Schedule variance analysis |
-| 10 | `kpi-dashboard` | Project KPI dashboard |
-
----
-
-## Prerequisites
-
-| Requirement | Details |
-|-------------|---------|
-| **Python 3.9+** | Most skills use Python scripts |
-| **AI Coding Assistant** | Claude Code, Cursor, Copilot, or similar |
-| **Basic Python knowledge** | Ability to run scripts and install packages |
-| **Your data** | Excel files, PDFs, or BIM models to process |
-
-Optional for advanced skills:
-- Docker (for n8n workflows)
-- PostgreSQL or SQLite (for database skills)
-- OpenAI API key (for LLM-based skills)
-
----
-
-## Quick Start
-
-### 1. Installation
-
-```bash
-pip install pandas openpyxl ifcopenshell pdfplumber
-```
-
-### 2. Example: Search Work Items
-
-```python
-# Instead of 15 minutes searching manuals → 10 seconds
-
-from qdrant_client import QdrantClient
-
-client = QdrantClient("localhost", port=6333)
-results = client.search(
-    collection_name="ddc_cwicr_en",
-    query_vector=get_embedding("concrete foundation pour"),
-    limit=5
-)
-
-# Result:
-# [{'code': '03.30.00', 'description': 'Concrete works - foundations', 'unit': 'm³'}]
-```
-
-### 3. Example: ETL Pipeline
-
-```python
-# Automatic processing of all Excel files from folder
-
-import pandas as pd
-from pathlib import Path
-
-# Extract
-all_data = [pd.read_excel(f) for f in Path("./estimates/").glob("*.xlsx")]
-df = pd.concat(all_data)
-
-# Transform
-df['Total'] = df['Quantity'] * df['Unit_Price']
-summary = df.groupby('Category')['Total'].sum()
-
-# Load
-summary.to_excel("summary_report.xlsx")
-```
-
-### 4. Example: Automated Report (n8n)
-
-```mermaid
-flowchart LR
-    A[⏰ Trigger<br/>5:00 PM daily] --> B[📊 Get Data<br/>Excel + Weather API]
-    B --> C[⚙️ Process<br/>Aggregate & Format]
-    C --> D[📄 Generate<br/>PDF Report]
-    D --> E[📧 Send<br/>Email to Team]
-
-    style A fill:#fff3e0
-    style E fill:#e8f5e9
-```
-
----
-
-## Documentation
-
-| Document | Description | Audience |
-|----------|-------------|----------|
-| [**GETTING_STARTED.md**](GETTING_STARTED.md) | Step-by-step automation guide | Executives, beginners |
-| [OPTIMIZER_GUIDE.md](OPTIMIZER_GUIDE.md) | How to work effectively with Claude | Developers |
-| [IMPROVEMENT_ROADMAP.md](IMPROVEMENT_ROADMAP.md) | Collection development plan | Contributors |
+| Data type | Examples | How skills process it |
+|-----------|----------|----------------------|
+| **Structured** | Excel, CSV, SQL databases | Direct queries and transformations |
+| **Semi-structured** | IFC/BIM models, JSON, XML | Parsing with specialized libraries |
+| **Unstructured** | PDF documents, photos, scans | AI/OCR extraction to structured format |
 
 ---
 
@@ -333,7 +255,7 @@ DDC_Skills/
 │   └── Open-Data-Transparency/ ← Uberization readiness
 │
 ├── 4_DDC_Curated/              ← External skills (20 skills)
-│   ├── Document-Generation/    ← PDF/Excel generation
+│   ├── Document-Generation/    ← PDF/Excel/DOCX/PPTX generation
 │   └── Quality-Assurance/      ← Quality checks
 │
 ├── 5_DDC_Innovative/           ← Advanced AI/ML skills (29 skills)
@@ -348,21 +270,21 @@ DDC_Skills/
 
 ---
 
+## Documentation
+
+| Document | Description | Audience |
+|----------|-------------|----------|
+| [**GETTING_STARTED.md**](GETTING_STARTED.md) | Step-by-step automation guide | Executives, beginners |
+| [OPTIMIZER_GUIDE.md](OPTIMIZER_GUIDE.md) | How to work effectively with AI assistants | Developers |
+| [IMPROVEMENT_ROADMAP.md](IMPROVEMENT_ROADMAP.md) | Collection development plan | Contributors |
+
+---
+
 ## Potential Time Savings
 
-Automation results vary depending on company size, data quality, and implementation effort. These are typical improvements reported after initial setup and team training.
+Automation results vary depending on company size, data quality, and implementation effort:
 
-```mermaid
-pie title Typical Time Reduction
-    "Data Entry & Search (50-70%)" : 60
-    "Report Generation (40-60%)" : 50
-    "Document Processing (30-50%)" : 40
-    "Analysis & Review (20-40%)" : 30
-```
-
-### Example Use Cases
-
-| Process | Manual Approach | With Automation |
+| Process | Manual approach | With automation |
 |---------|-----------------|-----------------|
 | Find work item rate | Search through price books | Database query with filters |
 | Daily report compilation | Collect data from multiple sources | Pre-configured data aggregation |
@@ -378,7 +300,7 @@ pie title Typical Time Reduction
 
 This collection provides templates and starting points, not turnkey solutions:
 
-- **Data preparation required** — skills assume clean, structured input data
+- **Data preparation required** — skills assume reasonably clean input data
 - **Customization needed** — code examples require adaptation to your specific workflows
 - **No GUI** — most skills are command-line scripts, not desktop applications
 - **AI-dependent** — skills are designed to work with AI coding assistants, not standalone
@@ -390,7 +312,7 @@ For production deployment, expect to invest time in testing, error handling, and
 
 ## About the Book
 
-**The majority of skills are based on the book ["Data-Driven Construction"](Books/)** — a comprehensive methodology for digital transformation in construction. The book serves as a strategic roadmap: from understanding your current data landscape to implementing advanced AI/ML solutions.
+**The majority of skills are based on the book ["Data-Driven Construction"](Books/)** — a methodology for digital transformation in construction. The book explains the reasoning behind each skill category: why data silos matter, how to classify your data, and what to automate first.
 
 <table>
 <tr>
@@ -403,13 +325,13 @@ For production deployment, expect to invest time in testing, error handling, and
 </td>
 <td>
 
-**Use the book as your digital transformation guide:**
+**Book structure maps to skills:**
 
-1. **Assess** your current state with Part I (data silos, maturity level)
-2. **Understand** your data types with Part II (structured, semi-structured, unstructured)
-3. **Automate** calculations with Part III (estimation, QTO, scheduling)
-4. **Scale** with analytics and ML from Part IV (dashboards, predictions)
-5. **Strategize** long-term with Chapter 5 (threats, opportunities)
+1. **Part I** — Data landscape assessment → `2_DDC_Book/1.1-*`, `1.2-*`
+2. **Part II** — Data types and classification → `2_DDC_Book/2.1-*` through `2.6-*`
+3. **Part III** — Estimation and scheduling → `2_DDC_Book/3.1-*` through `3.3-*`
+4. **Part IV** — Analytics and ML → `2_DDC_Book/4.1-*` through `4.5-*`
+5. **Part V** — Threats and long-term strategy → `2_DDC_Book/5.*`
 
 **[Download Free in 31 Languages →](Books/)**
 
@@ -434,7 +356,7 @@ For production deployment, expect to invest time in testing, error handling, and
 
 ## Support the Project
 
-If you find these tools useful, please give the repository a star! It helps others discover these resources and motivates us to add more skills and updates for the construction industry.
+If you find these tools useful, please give the repository a star — it helps others discover these resources.
 
 <p align="center">
   <a href="https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction">
@@ -442,7 +364,7 @@ If you find these tools useful, please give the repository a star! It helps othe
   </a>
 </p>
 
-**Also star our other repositories:**
+**Related repositories:**
 
 | Repository | Description |
 |------------|-------------|
@@ -470,4 +392,4 @@ Each skill should include a `SKILL.md` with clear instructions and working code 
 
 ---
 
-**Start automation today → [GETTING_STARTED.md](GETTING_STARTED.md)**
+**Start here → [GETTING_STARTED.md](GETTING_STARTED.md)**
