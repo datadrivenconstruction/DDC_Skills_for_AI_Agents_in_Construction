@@ -6,7 +6,7 @@
 
 <p>
   <a href="https://claude.ai/download"><img src="https://img.shields.io/badge/Claude_Code-191919?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Code"></a>
-  <a href="https://antigravity.ai"><img src="https://img.shields.io/badge/Google_Antigravity-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Antigravity"></a>
+  <a href="https://antigravity.google/"><img src="https://img.shields.io/badge/Google_Antigravity-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Antigravity"></a>
   <a href="https://github.com/nicepkg/opencode"><img src="https://img.shields.io/badge/OpenCode-333333?style=for-the-badge&logo=github&logoColor=white" alt="OpenCode"></a>
   <a href="https://github.com/clawdbot/clawdbot"><img src="https://img.shields.io/badge/ClawdBot-FF6B35?style=for-the-badge&logoColor=white" alt="ClawdBot"></a>
 </p>
