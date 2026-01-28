@@ -9,7 +9,6 @@
   <img src="https://img.shields.io/badge/Categories-5-green?style=flat-square" alt="Categories">
   <img src="https://img.shields.io/badge/Book_Languages-31-orange?style=flat-square" alt="Languages">
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License">
-  <a href="https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction"><img src="https://img.shields.io/github/stars/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction?style=flat-square" alt="GitHub stars"></a>
 </p>
 
 <!-- TODO: Insert cover image here -->
