@@ -56,16 +56,17 @@
 
 ## Priority 3: Integration Skills
 
-### 3.1 Software Integrations
+### 3.1 Software Integrations (Conceptual)
 
-| Skill | MCP Server | Construction Platform |
-|-------|------------|----------------------|
-| **procore-integration** | procore-mcp | Procore PM |
-| **plangrid-integration** | plangrid-mcp | PlanGrid/Autodesk |
-| **primavera-integration** | p6-mcp | Oracle Primavera P6 |
-| **ms-project-integration** | msproject-mcp | Microsoft Project |
-| **bluebeam-integration** | bluebeam-mcp | Bluebeam Revu |
-| **acc-integration** | acc-mcp | Autodesk Construction Cloud |
+> **Disclaimer:** The integrations listed below are conceptual proposals for skills that could connect with common construction platforms. All product names are trademarks of their respective owners. Integration implementation requires appropriate API access and licensing from each vendor.
+
+| Skill | Purpose | Platform Type |
+|-------|---------|---------------|
+| **pm-system-integration** | Project management data sync | PM Systems |
+| **field-app-integration** | Field data collection sync | Field Apps |
+| **scheduling-integration** | Schedule data exchange | Scheduling Tools |
+| **document-mgmt-integration** | Document system connector | DMS Platforms |
+| **bim-cloud-integration** | Cloud BIM data access | BIM Platforms |
 
 ### 3.2 Data Source Integrations
 

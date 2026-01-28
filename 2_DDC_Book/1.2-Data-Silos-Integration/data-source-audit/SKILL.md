@@ -12,14 +12,16 @@ Perform comprehensive audits of construction data sources to identify silos, map
 ## Business Case
 
 Construction organizations typically have 10-50+ data sources:
-- Project management systems (Procore, Autodesk Build)
-- Estimating software (Sage, Timberline, WinEst)
-- Scheduling tools (Primavera P6, MS Project)
-- Accounting/ERP (Sage 300, Viewpoint, CMiC)
-- BIM platforms (Revit, Navisworks, ACC)
-- Document management (SharePoint, Aconex)
-- Field apps (PlanGrid, Fieldwire)
-- Spreadsheets (Excel files everywhere)
+- Project management systems
+- Estimating software
+- Scheduling tools
+- Accounting/ERP systems
+- BIM platforms
+- Document management systems
+- Field apps
+- Spreadsheets
+
+> **Note:** This skill is vendor-agnostic and works with any data source. Product names mentioned elsewhere in examples are trademarks of their respective owners.
 
 This skill helps:
 - Discover all data sources

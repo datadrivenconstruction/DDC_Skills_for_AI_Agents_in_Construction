@@ -1,27 +1,27 @@
 ---
-name: revit-to-excel
-description: "Convert Revit (.rvt, .rfa) files to Excel databases using RvtExporter CLI. No Autodesk license required."
+name: rvt-to-excel
+description: "Convert RVT/RFA files to Excel databases. Extract BIM element data, properties, and quantities."
 ---
 
-# Revit to Excel Conversion
+# RVT to Excel Conversion
 
 ## Business Case
 
 ### Problem Statement
-BIM data is locked inside proprietary Revit files, making it difficult to:
-- Analyze project data without Revit license
-- Process multiple projects in batch
-- Integrate BIM data with analytics pipelines
-- Share data with non-Revit users
+BIM data inside RVT files needs to be extracted for:
+- Processing multiple projects in batch
+- Integrating BIM data with analytics pipelines
+- Sharing structured data with stakeholders
+- Generating reports and quantity takeoffs
 
 ### Solution
-RvtExporter.exe converts Revit files to structured Excel databases offline, without requiring Autodesk licenses or APIs.
+Convert RVT files to structured Excel databases for analysis and reporting.
 
 ### Business Value
-- **Zero license cost** - No Revit license needed
-- **Batch processing** - Convert thousands of projects
-- **Data democratization** - Excel is universally accessible
+- **Batch processing** - Convert multiple projects
+- **Data accessibility** - Excel format for universal access
 - **Pipeline integration** - Feed data to BI tools, ML models
+- **Structured output** - Organized element data and properties
 
 ## Technical Implementation
 

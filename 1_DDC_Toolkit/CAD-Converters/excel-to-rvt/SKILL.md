@@ -1,9 +1,11 @@
 ---
-name: excel-to-revit
-description: "Import Excel data into Revit projects. Update element parameters, create schedules, and sync external data sources."
+name: excel-to-rvt
+description: "Import Excel data into RVT projects. Update element parameters, create schedules, and sync external data sources."
 ---
 
-# Excel to Revit Import
+# Excel to RVT Import
+
+> **Note:** RVT is the file format. Examples may reference Autodesk® Revit® APIs. Autodesk and Revit are registered trademarks of Autodesk, Inc.
 
 ## Business Case
 

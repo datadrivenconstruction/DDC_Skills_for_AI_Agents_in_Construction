@@ -1,9 +1,11 @@
 ---
-name: revit-to-ifc
-description: "Convert Revit files to IFC format using RVT2IFCconverter CLI. Support IFC2x3, IFC4, IFC4.3 with customizable export settings."
+name: rvt-to-ifc
+description: "Convert RVT files to IFC format. Support IFC2x3, IFC4, IFC4.3 with customizable export settings."
 ---
 
-# Revit to IFC Conversion
+# RVT to IFC Conversion
+
+> **Note:** RVT is the file format. IFC is an open standard by buildingSMART International.
 
 ## Business Case
 

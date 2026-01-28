@@ -1,6 +1,6 @@
 ---
 name: dgn-to-excel
-description: "Convert MicroStation DGN files (v7-v8) to Excel databases using DgnExporter CLI. Extract elements, levels, and properties without Bentley licenses."
+description: "Convert DGN files (v7-v8) to Excel databases. Extract elements, levels, and properties from infrastructure CAD files."
 ---
 
 # DGN to Excel Conversion
@@ -8,23 +8,23 @@ description: "Convert MicroStation DGN files (v7-v8) to Excel databases using Dg
 ## Business Case
 
 ### Problem Statement
-MicroStation DGN files are common in infrastructure and civil engineering:
+DGN files are common in infrastructure and civil engineering:
 - Transportation and highway design
 - Bridge and tunnel projects
 - Utility networks
 - Rail infrastructure
 
-Extracting data requires expensive Bentley licenses or complex APIs.
+Extracting structured data from DGN files for analysis and reporting can be challenging.
 
 ### Solution
-DgnExporter.exe converts DGN files to structured Excel databases offline, supporting both v7 and v8 formats.
+Convert DGN files to structured Excel databases, supporting both v7 and v8 formats.
 
 ### Business Value
-- **Zero license cost** - No Bentley MicroStation required
 - **Infrastructure support** - Civil engineering focused
 - **Legacy format support** - V7 and V8 DGN files
 - **Data extraction** - Levels, cells, text, geometry
 - **Batch processing** - Process multiple files
+- **Structured output** - Excel format for analysis
 
 ## Technical Implementation
 

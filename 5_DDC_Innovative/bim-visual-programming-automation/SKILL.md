@@ -1,13 +1,15 @@
 ---
-name: revit-dynamo-automation
-description: "Automate Revit workflows using Dynamo and Python. Create parametric schedules, export data, batch modify elements, and integrate with external data sources."
+name: bim-visual-programming-automation
+description: "Automate BIM workflows using visual programming and Python. Create parametric schedules, export data, batch modify elements, and integrate with external data sources."
 ---
 
-# Revit Dynamo Automation
+# BIM Visual Programming Automation
 
 ## Overview
 
-This skill provides Dynamo scripts and Python nodes for automating Revit workflows. Extract data, modify elements in batch, generate schedules, and integrate with external systems.
+This skill provides visual programming scripts and Python nodes for automating BIM workflows. Extract data, modify elements in batch, generate schedules, and integrate with external systems.
+
+> **Note:** Examples use Autodesk® Revit® and Dynamo™ APIs. Autodesk, Revit, and Dynamo are registered trademarks of Autodesk, Inc.
 
 **Key Capabilities:**
 - Batch element modification

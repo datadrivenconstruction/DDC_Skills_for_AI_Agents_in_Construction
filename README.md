@@ -56,7 +56,7 @@ mindmap
         55,719 work items
         31 languages
       CAD Converters
-        Revit → Excel
+        RVT → Excel
         IFC → Excel
         DWG → Excel
       Analytics
@@ -118,7 +118,7 @@ Examples of common problems and which skills address them:
 |--------------|---------------------|--------------|--------|
 | Searching for work item rates takes too long | Semantic search across 55,719 items in 31 languages | `semantic-search-cwicr` | `1_DDC_Toolkit/` |
 | Estimators spend days building estimates manually | Generates estimates from historical data and templates | `estimate-builder` | `1_DDC_Toolkit/` |
-| BIM models contain data but it's locked in Revit/IFC | Extracts quantities and properties to Excel | `ifc-to-excel`, `revit-to-excel` | `1_DDC_Toolkit/` |
+| BIM models contain data but it's locked in RVT/IFC files | Extracts quantities and properties to Excel | `ifc-to-excel`, `rvt-to-excel` | `1_DDC_Toolkit/` |
 | Daily/weekly reports take hours to compile | Automated data collection and report generation | `n8n-daily-report` | `3_DDC_Insights/` |
 | Site photos pile up with no organization | AI classifies and tags site photos automatically | `n8n-photo-report` | `3_DDC_Insights/` |
 | Data is scattered across Excel files, emails, PDFs | Finds all data sources and maps dependencies | `data-silo-detection` | `2_DDC_Book/` |
@@ -266,7 +266,7 @@ flowchart TB
 | Data type | Examples | Skills that process it |
 |-----------|----------|----------------------|
 | **Structured** | Excel, CSV, SQL databases | `etl-pipeline`, `estimate-builder`, `budget-tracker` |
-| **Semi-structured** | IFC/BIM models, JSON, XML | `ifc-to-excel`, `revit-to-excel`, `dwg-to-excel` |
+| **Semi-structured** | IFC/BIM models, JSON, XML | `ifc-to-excel`, `rvt-to-excel`, `dwg-to-excel` |
 | **Unstructured** | PDF documents, photos, scans | `specification-extractor`, `n8n-photo-report`, `document-ocr` |
 
 ---
@@ -484,6 +484,15 @@ Each skill should include a `SKILL.md` with clear instructions and working code 
 - **CWICR Database**: CC BY 4.0
 - **DDC Tools**: MIT License
 - **Skills**: MIT License
+
+---
+
+## Trademarks
+
+All product names, logos, and brands mentioned in this repository are property of their respective owners. All company, product and service names used are for identification purposes only. Use of these names, logos, and brands does not imply endorsement.
+
+- IFC is an open standard by buildingSMART International
+- File format references (RVT, DWG, DGN, NWD, etc.) are used for technical interoperability purposes only
 
 ---
 
