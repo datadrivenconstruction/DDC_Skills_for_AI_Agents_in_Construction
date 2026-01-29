@@ -11,8 +11,7 @@
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License">
 </p>
 
-<!-- TODO: Insert cover image here -->
-<!-- <p align="center"><img src="assets/cover.png" alt="DDC Skills" width="800"></p> -->
+<p align="center"><img src="https://github.com/datadrivenconstruction/cad2data-Revit-IFC-DWG-DGN-pipeline-with-conversion-validation-qto/blob/main/DDC_in_additon/DDC_readme_content/ddc_skills_datadrivenconstruction.jpg" alt="DDC Skills" width="800"></p> -->
 
 <h3 align="center">Works with any AI coding assistant:</h3>
 
