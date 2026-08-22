@@ -5,8 +5,8 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Skills-221-blue?style=flat-square" alt="Skills">
-  <img src="https://img.shields.io/badge/Categories-5-green?style=flat-square" alt="Categories">
+  <img src="https://img.shields.io/badge/Skills-229-blue?style=flat-square" alt="Skills">
+  <img src="https://img.shields.io/badge/Categories-6-green?style=flat-square" alt="Categories">
   <img src="https://img.shields.io/badge/Book_Languages-31-orange?style=flat-square" alt="Languages">
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License">
 </p>
@@ -26,7 +26,7 @@
 
 ## What is this?
 
-A collection of **221 skills** for automating construction company processes with AI coding assistants.
+A collection of **229 skills** for automating construction company processes with AI coding assistants.
 
 ### What is a "Skill"?
 
@@ -44,15 +44,16 @@ Skills are organized by source and complexity level:
 | **2_DDC_Book** | Skills mapped to book chapters: data evolution, types, estimation, ML | 67 | You want to follow a structured learning path |
 | **3_DDC_Insights** | Practical workflows: n8n automation, AI agents, field tools | 20 | You need workflow automation |
 | **4_DDC_Curated** | Document generation (PDF, Excel, DOCX, PPTX), quality checks | 20 | You need document or report templates |
-| **5_DDC_Innovative** | Advanced: computer vision, IoT, digital twins, risk assessment | 29 | You're ready for AI/ML experimentation |
+| **5_DDC_Innovative** | Advanced: computer vision, IoT, digital twins, risk assessment, AI agents, ESG | 31 | You're ready for AI/ML experimentation |
+| **6_OpenConstructionERP** | Work with the OpenConstructionERP platform: load cost bases, BOQ & estimating, BIM takeoff, 4D/5D, cost browser | 6 | You build on the open-source construction ERP |
 
 ```mermaid
 mindmap
-  root((DDC Skills<br/>221 skills))
+  root((DDC Skills<br/>229 skills))
     1_DDC_Toolkit
       CWICR Database
-        55,719 work items
-        31 languages
+        8 national bases
+        30 markets · 26 languages
       CAD Converters
         RVT → Excel
         IFC → Excel
@@ -84,6 +85,16 @@ mindmap
       IoT & Sensors
       Advanced BIM
         Digital Twin
+      AI Agent Orchestration
+      Embodied Carbon & ESG
+    6_OpenConstructionERP
+      Load Cost Bases
+        TR · ZH · BR · ES · IT
+        VN · ID · GR · 30 markets
+      BOQ & Estimating
+      BIM & CAD Takeoff
+      4D/5D Scheduling
+      Cost Browser
 ```
 
 ---
