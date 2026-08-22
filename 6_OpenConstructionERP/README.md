@@ -10,6 +10,12 @@ Skills for working with [OpenConstructionERP](https://github.com/datadrivenconst
 | `oce-bim-takeoff` | RVT/IFC/DWG/DGN/PDF takeoff, bulk element→BOQ linking, measurement |
 | `oce-scheduling-4d5d` | Task graphs, BIM-linked sequencing, cost roll-ups over time |
 | `oce-cost-browser` | Classification tree, SQL + semantic search, variants, certainty, resource catalogs |
+| `oce-mcp-integration` | MCP server wrapper around the ERP API for Claude Code / Antigravity / OpenCode |
+| `oce-field-ops` | Punch list, daily diary, HSE observations, site task board |
+| `oce-tendering` | Tender BOQ export (GAEB), bid comparison, risk register, reports |
+| `oce-validation-engine` | Rule packs (BOQ quality, DIN 276, NRM, GAEB), custom rules, import gate |
+| `oce-geo-coordination` | Geo hub (Cesium portfolio map), coordination hub with clash AI |
+| `oce-property-dev` | Lead → SPA → handover: feasibility budgets, sales milestones, closeout |
 
 ## The cost data behind the platform
 
