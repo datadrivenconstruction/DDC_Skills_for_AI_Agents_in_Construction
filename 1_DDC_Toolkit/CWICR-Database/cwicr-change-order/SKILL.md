@@ -368,7 +368,7 @@ class CWICRChangeOrder:
 
 ```python
 # Load CWICR data
-cwicr = pd.read_parquet("ddc_cwicr_en.parquet")
+cwicr = pd.read_parquet("TR_workitems_costs_resources_DDC_CWICR.parquet")
 
 # Initialize change order processor
 co_processor = CWICRChangeOrder(cwicr, overhead_rate=0.12, profit_rate=0.08)

@@ -1,13 +1,13 @@
 ---
 name: "cwicr-multilingual"
-description: "Work with CWICR database across 9 languages. Cross-language matching, translation, and regional pricing."
+description: "Work with CWICR database across 26 languages. Cross-language matching, translation, and regional pricing."
 homepage: "https://datadrivenconstruction.io"
 metadata: {"openclaw": {"emoji": "🗄️", "os": ["darwin", "linux", "win32"], "homepage": "https://datadrivenconstruction.io", "requires": {"bins": ["python3"]}}}
 ---
 # CWICR Multilingual Support
 
 ## Overview
-CWICR database supports 9 languages with consistent work item codes. This skill enables cross-language work item matching, translation, and regional price comparison.
+CWICR database supports 26 languages with consistent work item codes. This skill enables cross-language work item matching, translation, and regional price comparison.
 
 ## Supported Languages
 
@@ -311,4 +311,4 @@ print(f"Cheapest: {region} at ${price}")
 
 ## Resources
 - **DDC Book**: Chapter 2.2 - Open Data Integration
-- **CWICR Database**: 9 languages, 55,000+ items
+- **CWICR Database**: 26 languages, 8 national bases + 30 markets

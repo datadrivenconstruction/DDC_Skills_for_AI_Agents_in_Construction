@@ -50,7 +50,7 @@ This roadmap defines a systematic approach to building a comprehensive AI skills
 
 | Priority | Skill | Description | Source |
 |----------|-------|-------------|--------|
-| HIGH | semantic-search-cwicr | 55,719 work items, 9 languages | DDC_Toolkit |
+| HIGH | semantic-search-cwicr | 8 national bases + 30 markets, 26 languages | DDC_Toolkit |
 | HIGH | data-quality-check | Validation rules for construction data | DDC_Methodology |
 | MEDIUM | ontology-mapper | Map custom codes to CWICR standard | DDC_Methodology |
 | MEDIUM | parquet-converter | Big data optimization for analytics | DDC_Methodology |

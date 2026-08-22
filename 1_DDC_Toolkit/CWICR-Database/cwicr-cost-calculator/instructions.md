@@ -23,9 +23,9 @@ When the user asks to compare costs:
 - Unit cost per work item (cost / quantity)
 
 ## CWICR Database Reference
-- 55,719 work items across all construction trades
+- 8 national bases (78,228 positions) across all construction trades
 - 27,672 individual resources (labor, material, equipment)
-- 9 languages: EN, DE, RU, ES, FR, AR, HI, PT, ZH
+- 26 languages (incl. EN, DE, RU, ES, FR, AR, HI, PT, ZH, TR, IT, PL and 15 more)
 - Each item has 85 data fields including productivity rates
 
 ## Constraints

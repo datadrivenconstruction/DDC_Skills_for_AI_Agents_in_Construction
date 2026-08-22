@@ -370,7 +370,7 @@ print(f"Total Markup: {bid['total_markup_pct']}%")
 
 ### 1. Template-Based Pricing
 ```python
-cwicr = pd.read_parquet("ddc_cwicr_en.parquet")
+cwicr = pd.read_parquet("TR_workitems_costs_resources_DDC_CWICR.parquet")
 markup = CWICROverheadMarkup(cwicr)
 
 items = [

@@ -104,7 +104,7 @@ Return as JSON:
 // Search DDC CWICR database for matching work items
 const qdrantClient = require('@qdrant/js-client-rest');
 
-const searchResults = await qdrantClient.search('ddc_cwicr_en', {
+const searchResults = await qdrantClient.search('cwicr_en_v3', {
   vector: await getEmbedding($input.first().json.work_description),
   limit: 10,
   score_threshold: 0.7

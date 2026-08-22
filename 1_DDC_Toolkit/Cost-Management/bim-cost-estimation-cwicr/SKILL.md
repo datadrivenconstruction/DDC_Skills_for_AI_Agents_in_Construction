@@ -1,6 +1,6 @@
 ---
 name: "bim-cost-estimation-cwicr"
-description: "Automated cost estimation from BIM models using DDC CWICR database with 55,719 work items. AI classification + vector search for accurate pricing."
+description: "Automated cost estimation from BIM models using DDC CWICR database (8 national bases, 78,228 positions). AI classification + vector search for accurate pricing."
 homepage: "https://datadrivenconstruction.io"
 metadata: {"openclaw":{"emoji":"🏗️","os":["darwin","linux","win32"],"homepage":"https://datadrivenconstruction.io","requires":{"bins":["python3"],"env":["OPENAI_API_KEY","QDRANT_URL"]},"primaryEnv":"OPENAI_API_KEY"}}
 ---
@@ -62,17 +62,17 @@ Generate accurate cost estimates from BIM models using AI classification and the
 
 ```yaml
 Database Overview:
-  work_items: 55,719
+  work_items: 78228  # 8 national bases
   resources: 27,672
   languages: 9 (AR, DE, EN, ES, FR, HI, PT, RU, ZH)
   fields_per_item: 85
-  embedding_model: text-embedding-3-large (3072d)
+  embedding_model: BAAI/bge-m3 (1024d)
   vector_db: Qdrant
 
 Collections:
   - ddc_cwicr_ar  # Arabic (Dubai prices)
   - ddc_cwicr_de  # German (Berlin prices)
-  - ddc_cwicr_en  # English (Toronto prices)
+  - cwicr_en_v3  # English (Toronto prices)
   - ddc_cwicr_es  # Spanish (Barcelona prices)
   - ddc_cwicr_fr  # French (Paris prices)
   - ddc_cwicr_hi  # Hindi (Mumbai prices)
@@ -156,9 +156,9 @@ class BIMCostEstimator:
     def get_embedding(self, text: str) -> List[float]:
         """Generate embedding for text"""
         response = self.openai.embeddings.create(
-            model="text-embedding-3-large",
+            model="BAAI/bge-m3",
             input=text,
-            dimensions=3072
+            dimensions=1024
         )
         return response.data[0].embedding
 

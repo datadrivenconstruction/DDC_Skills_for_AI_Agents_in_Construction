@@ -132,7 +132,7 @@ Examples of common problems and which skills address them:
 
 | Your problem | What the skill does | Skill to run | Folder |
 |--------------|---------------------|--------------|--------|
-| Searching for work item rates takes too long | Semantic search across 55,719 items in 31 languages | `semantic-search-cwicr` | `1_DDC_Toolkit/` |
+| Searching for work item rates takes too long | Semantic search across 78,228 national + 55,719 global items in 26 languages | `semantic-search-cwicr` | `1_DDC_Toolkit/` |
 | Estimators spend days building estimates manually | Generates estimates from historical data and templates | `estimate-builder` | `1_DDC_Toolkit/` |
 | BIM models contain data but it's locked in RVT/IFC files | Extracts quantities and properties to Excel | `ifc-to-excel`, `rvt-to-excel` | `1_DDC_Toolkit/` |
 | Daily/weekly reports take hours to compile | Automated data collection and report generation | `n8n-daily-report` | `3_DDC_Insights/` |
@@ -362,7 +362,7 @@ Construction data comes in three forms. Each requires a different processing app
 DDC_Skills/
 │
 ├── 1_DDC_Toolkit/              ← Production tools (85 skills)
-│   ├── CWICR-Database/         ← 55,719 work items database
+│   ├── CWICR-Database/         ← 8 national bases + 30 markets database
 │   ├── CAD-Converters/         ← Revit/IFC/DWG → Excel
 │   └── ...
 │
@@ -479,7 +479,7 @@ If you find these tools useful, please give the repository a star — it helps o
 
 | Repository | Description |
 |------------|-------------|
-| [OpenConstructionEstimate-DDC-CWICR](https://github.com/datadrivenconstruction/OpenConstructionEstimate-DDC-CWICR) | 55,719 work items database in 31 languages |
+| [OpenConstructionEstimate-DDC-CWICR](https://github.com/datadrivenconstruction/OpenConstructionEstimate-DDC-CWICR) | 8 national bases + 30 markets in 26 languages |
 | [cad2data Pipeline](https://github.com/datadrivenconstruction/cad2data-Revit-IFC-DWG-DGN-pipeline-with-conversion-validation-qto) | Revit/IFC/DWG/DGN to Excel converter |
 
 ---
@@ -497,7 +497,7 @@ Each skill should include a `SKILL.md` with clear instructions and working code 
 
 ## License
 
-- **CWICR Database**: CC BY 4.0
+- **CWICR Database**: CC BY-NC 4.0 (non-commercial; separate DDC commercial license)
 - **DDC Tools**: MIT License
 - **Skills**: MIT License
 

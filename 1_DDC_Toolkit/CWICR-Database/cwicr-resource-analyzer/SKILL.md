@@ -417,7 +417,7 @@ from cwicr_data_loader import CWICRDataLoader
 
 # Load data
 loader = CWICRDataLoader()
-cwicr = loader.load("ddc_cwicr_en.parquet")
+cwicr = loader.load("TR_workitems_costs_resources_DDC_CWICR.parquet")
 
 # Initialize analyzer
 analyzer = CWICRResourceAnalyzer(cwicr)

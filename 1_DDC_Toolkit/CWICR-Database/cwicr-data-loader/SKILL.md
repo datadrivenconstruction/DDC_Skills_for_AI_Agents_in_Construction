@@ -413,7 +413,7 @@ def get_cwicr_statistics(source: str) -> Dict[str, Any]:
 ```python
 # Load from Parquet (fastest)
 loader = CWICRDataLoader()
-df = loader.load("ddc_cwicr_en.parquet")
+df = loader.load("TR_workitems_costs_resources_DDC_CWICR.parquet")
 print(f"Loaded {len(df)} work items")
 
 # Load from Excel

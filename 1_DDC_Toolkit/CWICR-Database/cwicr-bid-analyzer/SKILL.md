@@ -377,7 +377,7 @@ class CWICRBidAnalyzer:
 
 ```python
 # Load CWICR benchmarks
-cwicr = pd.read_parquet("ddc_cwicr_en.parquet")
+cwicr = pd.read_parquet("TR_workitems_costs_resources_DDC_CWICR.parquet")
 
 # Initialize analyzer
 analyzer = CWICRBidAnalyzer(cwicr)

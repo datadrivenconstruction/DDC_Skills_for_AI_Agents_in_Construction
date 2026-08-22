@@ -657,7 +657,7 @@ def ifc_to_estimate(ifc_path, price_db):
 
 **Problem:** Company has 5 estimators, each uses their own work names. "Concrete foundation pour", "Cast-in-place foundation concrete", "Foundation concrete work" — same work with different names.
 
-**Solution:** CWICR Database — 55,719 standardized work items in 9 languages.
+**Solution:** CWICR Database — 8 national bases (78,228 positions) plus 30 markets in 26 languages.
 
 ```python
 # 1_DDC_Toolkit/CWICR-Database/semantic-search-cwicr/SKILL.md
@@ -670,7 +670,7 @@ def search_cwicr(query: str) -> list:
 
     # Vector search (understands synonyms!)
     results = client.search(
-        collection_name="ddc_cwicr_en",
+        collection_name="cwicr_en_v3",
         query_vector=get_embedding(query),
         limit=5
     )
