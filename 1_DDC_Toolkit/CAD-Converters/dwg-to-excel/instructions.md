@@ -23,6 +23,6 @@ When the user asks about DWG data extraction:
 
 ## Constraints
 - DwgExporter CLI must be installed locally (filesystem permission for execution)
-- No Autodesk license required — uses Open Design Alliance libraries
+- No Autodesk license required — DWG files are read directly by the converter
 - subprocess.run() is used solely for invoking DwgExporter CLI tool
 - Large files (>100MB) may require batch processing
