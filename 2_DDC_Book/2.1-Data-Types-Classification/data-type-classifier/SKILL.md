@@ -215,7 +215,7 @@ class DataTypeClassifier:
             DataFormat.BCF: ["bcfpython", "ifcopenshell"],
             DataFormat.PDF: ["pdfplumber", "PyPDF2", "pdf2image"],
             DataFormat.DOCX: ["python-docx", "mammoth"],
-            DataFormat.DWG: ["ezdxf", "Teigha", "ODA SDK"],
+            DataFormat.DWG: ["ezdxf", "LibreDWG"],
             DataFormat.DXF: ["ezdxf", "dxfgrabber"],
             DataFormat.RVT: ["Revit API", "pyRevit", "Dynamo"],
             DataFormat.NWD: ["Navisworks API", "NW API"],
